@@ -37,10 +37,10 @@ function onClickImage(event) {
 	const modal = basicLightbox.create(`<img class="modal__image" src="${currentImgLink}">`);
 
 	modal.show();
-
+	
+    //Закриття модального вікна після натискання клавіші Escape
 	window.addEventListener('keydown', onEscKeyPress);
 
-    //Закриття модального вікна після натискання клавіші Escape
 	function onEscKeyPress(event) {
 		const ESC_KEY_CODE = 'Escape';
 		if (event.code === ESC_KEY_CODE) {

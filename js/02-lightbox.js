@@ -1,5 +1,5 @@
 import { galleryItems } from './gallery-items.js';
-// Change code below this line
+
 const galleryContainer = document.querySelector('.gallery');
 
 const galleryMarkup = createGalleryMarkup(galleryItems);
@@ -16,6 +16,10 @@ function createGalleryMarkup(galleryItems) {
     })
     .join('');
 }
+
+//Додавання підписів до зображень з атрибута alt 
+//(Підпис буде знизу і з'являється через 250 мілісекунд після відкриття зображення)
+
 new SimpleLightbox('.gallery a', {
 	animationSpeed: 150,
 	captionsData: 'alt',
